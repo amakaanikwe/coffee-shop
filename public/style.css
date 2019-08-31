@@ -4,6 +4,15 @@
           font-size: 28px;
         }
 
+        .bgimg {
+            background-image: url("https://www.dropbox.com/s/acu79uw0s8elwzx/crew-aw6UewokOIo-unsplash.jpg?raw=1");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 75%;
+            height: 400px;
+        }
+
         nav {
             background-color: transparent;          
         }
@@ -13,7 +22,7 @@
           margin: 0;
           padding: 0;
           overflow: hidden;
-          background-color: #333;
+          background-color: transparent;;
           position: -webkit-sticky; /* Safari */
           position: sticky;
           top: 0;
