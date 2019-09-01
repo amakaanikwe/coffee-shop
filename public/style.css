@@ -57,3 +57,12 @@
         .active {
           background-color: rgb(36, 68, 38);
         }
+
+        .coffeeStools {
+            background-image: url("https://www.dropbox.com/s/b1kaag377z7tla3/matt-hoffman-7zwyUZVrt-U-unsplash.jpg?raw=1");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 75%;
+            height: 500px;
+        }
