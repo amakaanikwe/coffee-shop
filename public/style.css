@@ -75,3 +75,14 @@
             min-height: 75%;
             height: 500px;
         }
+
+        /* Footer  */
+        footer {
+            height: 20px;
+            background-color: #070f13;
+        }
+        footer .glyphicon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: rgb(95, 95, 93);
+        }
