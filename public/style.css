@@ -5,7 +5,7 @@
         }
 
         .bgimg {
-            background-image: url("https://www.dropbox.com/s/acu79uw0s8elwzx/crew-aw6UewokOIo-unsplash.jpg?raw=1");
+            background-image: url("https://www.dropbox.com/s/ik7lpg04qumj112/michal-parzuchowski-ItaV89TNkks-unsplash%20%28edited-Pixlr%29.jpg?raw=1");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -17,9 +17,14 @@
             color: white;
             font-size: 20px;
             text-align: center;
-            padding-top: 150px;
-            padding-bottom: 160px;
+            padding-top: 130px;
+            padding-bottom: 100px;
 
+        }
+
+        header div h1 {
+            font-size: 110px;
+            margin-top: 40px;
         }
 
         nav {
@@ -58,8 +63,12 @@
           background-color: rgb(36, 68, 38);
         }
 
+        #menu{
+            background-color: lightgray;
+        }
+
         .coffeeStools {
-            background-image: url("https://www.dropbox.com/s/b1kaag377z7tla3/matt-hoffman-7zwyUZVrt-U-unsplash.jpg?raw=1");
+            background-image: url("https://www.dropbox.com/s/k718dks7b0df2pt/matt-hoffman-7zwyUZVrt-U-unsplash%20%28edited-Pixlr%29.jpg?raw=1");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
