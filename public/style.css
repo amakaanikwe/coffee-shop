@@ -78,11 +78,12 @@
 
         /* Footer  */
         footer {
-            height: 20px;
-            background-color: #070f13;
+            height: 80px;
+            background-color: lightgray;
         }
         footer .glyphicon {
-            font-size: 60px;
+            font-size: 20px;
             margin-bottom: 20px;
-            color: rgb(95, 95, 93);
+            margin-top: 20px;
+            color: rgb(36, 68, 38);
         }
