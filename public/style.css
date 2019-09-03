@@ -22,6 +22,14 @@
 
         }
 
+        .textRight {
+            padding-top: 17px;
+        }
+
+        .textLeft {
+            padding-left: 40px;
+        }
+
         header div h1 {
             font-size: 110px;
             margin-top: 40px;
@@ -60,7 +68,7 @@
         }
         
         .active {
-          background-color: rgb(36, 68, 38);
+          background-color: rgb(145, 160, 146);
         }
 
         #menu{
