@@ -27,8 +27,8 @@
         }
 
         .height {
-            height: 20px;
-            color: black
+            height: 800px;
+            color: black;
             overflow-y: auto;
         }
 
