@@ -26,8 +26,10 @@
             padding-top: 17px;
         }
 
-        .textLeft {
-            padding-left: 40px;
+        .height {
+            height: 20px;
+            color: black
+            overflow-y: auto;
         }
 
         header div h1 {
