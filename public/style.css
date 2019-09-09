@@ -51,9 +51,15 @@
           position: sticky;
           top: 0;
         }
+
+        .navbar-nav {
+          flex-direction: row;
+
+        }
         
         li {
           float: left;
+          padding: 10px; 
         }
         
         li a {
