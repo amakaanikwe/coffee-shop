@@ -75,6 +75,10 @@
         li a:hover {
           border-bottom: 1px solid white;
         }
+
+        .aboutHeight {
+          height: 160px;
+        }
         
         #menu{
             background-color: lightgray;
