@@ -50,7 +50,7 @@ class App extends React.Component{
       <Header/>
       <table>
          <tbody>
-            {this.state.menu.map((person, i) => <TableRow key = {i} 
+            {this.state.menu.map((person, i) => <MenuComponent key = {i} 
                data = {person} />)}
          </tbody>
       </table>
