@@ -47,7 +47,6 @@ class App extends React.Component{
   render () {
     return (
       <div>
-      <Header/>
       <table>
          <tbody>
             {this.state.menu.map((person, i) => <MenuComponent key = {i} 
