@@ -32,13 +32,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
   <!-- local files -->
   <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <script src="../src/index.js"></script>
   </head>
 
   <body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <div id="root"></div>
 
     <header  class="bgimg" class="jumbotron jumbotron-fluid">
             <div class="title container center">
@@ -79,7 +84,7 @@
     <div id="menu" class="row">
       <div  style="padding-left: 40px;" class="col-md-6 height">
         <div id="root"></div>
-        <h1>Our Menu</h1><br>
+        <!-- <h1>Our Menu</h1><br>
         <h4>Coffee & Tea</h4><br>
 
         <h4>SINGLE DRIP</h4>
@@ -105,7 +110,7 @@
         <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates $8</p><br>
       
         <h4>Belgian Waffle</h4>
-        <p class="w3-text-grey">Vanilla flavored batter with malted flour $10.5</p><br>
+        <p class="w3-text-grey">Vanilla flavored batter with malted flour $10.5</p><br> -->
       
         <!-- <h4>Scrambled eggs</h4>
         <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions $7.5</p><br>
