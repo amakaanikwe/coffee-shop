@@ -47,8 +47,14 @@ class App extends React.Component{
   render () {
     return (
       <div>
-        < MenuComponent {this.state.menu} />
-      </div>
+      <Header/>
+      <table>
+         <tbody>
+            {this.state.menu.map((person, i) => <TableRow key = {i} 
+               data = {person} />)}
+         </tbody>
+      </table>
+   </div>
     )
   }
 
