@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import MenuComponent from './components/MenuComponent.js';
+import MenuComponent from './components/MenuComponent.jsx';
 
 class App extends React.Component{
   constructor(props) {
@@ -39,15 +39,15 @@ class App extends React.Component{
         {
           id:'Belgian Waffle',
           summary: "Vanilla flavored batter with malted flour $10.5"
-        }  
-        
+        }    
       ]
     };  
   }
+  
   render () {
     return (
       <div>
-        < MenuComponent />
+        < MenuComponent {this.state.menu} />
       </div>
     )
   }

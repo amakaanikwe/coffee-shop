@@ -27,7 +27,7 @@
                     <p>Assortment of fresh baked fruit breads and muffins $5.5</p><br></br>
                 
                     <h4>Honey Almond Granola with Fruits</h4>
-                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates $8</p><br>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates $8</p><br></br>
                 
                     <h4>Belgian Waffle</h4>
                     <p>Vanilla flavored batter with malted flour $10.5</p><br></br>
