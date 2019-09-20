@@ -1,6 +1,6 @@
  import React from 'react';
 
- class MenuComponent extends React.Component {
+ class CoffeeTeaComp extends React.Component {
      render() {
          return (
             <tr>
@@ -10,4 +10,4 @@
          )
      }
  }
- export default MenuComponent;
+ export default CoffeeTeaComp;

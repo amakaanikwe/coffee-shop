@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import MenuComponent from './components/MenuComponent.jsx';
+import CoffeeTeaComp from './components/CoffeeTeaComp.jsx';
 
 class App extends React.Component{
   constructor(props) {
@@ -10,7 +10,7 @@ class App extends React.Component{
       menu : [
         {
           id:'Single Drip',
-          summary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
+          summmary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
         },
         {
           id:'Pour-Over',
@@ -49,7 +49,7 @@ class App extends React.Component{
       <div>
       <table>
          <tbody>
-            {this.state.menu.map((item, i) => <MenuComponent key = {i} menu = {item} />)}
+            {this.state.menu.map((item, i) => <CoffeeTeaComp key = {i} menu = {item} />)}
          </tbody>
       </table>
    </div>
