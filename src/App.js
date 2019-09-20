@@ -9,8 +9,8 @@ class App extends React.Component{
     this.state = {
       menu : [
         {
-          id: 'Single Drip',
-          summmary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
+          id:'Single Drip',
+          summary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
         },
         {
           id:'Pour-Over',
