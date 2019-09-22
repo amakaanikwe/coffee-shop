@@ -27,7 +27,9 @@ class App extends React.Component{
         {
           id:'Green Tea',
           summary: "Assortment of Green Teas $3"
-        },
+        },   
+      ],
+      treats : [
         {
           id:'Bread Basket',
           summary: "ssortment of fresh baked fruit breads and muffins $5.5"
@@ -39,8 +41,17 @@ class App extends React.Component{
         {
           id:'Belgian Waffle',
           summary: "Vanilla flavored batter with malted flour $10.5"
-        }    
+        },
+        {
+          id:'Scrambled eggs',
+          summary: "Scrambled eggs, roasted red pepper and garlic, with green onions $7.5"
+        },
+        {
+          id:'Blueberry Pancakes',
+          summary: "With syrup, butter and lots of berries $8.5"
+        }, 
       ]
+
     };  
   }
   
