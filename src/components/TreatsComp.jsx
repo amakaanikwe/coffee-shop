@@ -10,4 +10,5 @@ class TreatsComp extends React.Component {
         )
     }
 }
+
 export default TreatsComp;
