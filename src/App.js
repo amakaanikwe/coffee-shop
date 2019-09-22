@@ -7,7 +7,7 @@ class App extends React.Component{
     super(props);
 
     this.state = {
-      menu : [
+      coffee : [
         {
           id:'Single Drip',
           summmary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
@@ -49,7 +49,7 @@ class App extends React.Component{
       <div>
       <table>
          <tbody>
-            {this.state.menu.map((item, i) => <CoffeeTeaComp key = {i} menu = {item} />)}
+            {this.state.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
          </tbody>
       </table>
    </div>

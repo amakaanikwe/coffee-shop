@@ -4,8 +4,8 @@
      render() {
          return (
             <tr>
-                <td>{this.props.menu.id}</td>
-                <td>{this.props.menu.summary}</td>
+                <td>{this.props.coffee.id}</td>
+                <td>{this.props.coffee.summary}</td>
             </tr>
          )
      }
