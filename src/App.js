@@ -7,9 +7,12 @@ class App extends React.Component{
   constructor(props) {
     super(props);
 
-    this.state = {
-     
+    const coffee = window.csinventory.coffee;
+    const treats = window.csinventory.treats
 
+    this.state = {
+      coffee,
+      treats,
     };  
   }
   
