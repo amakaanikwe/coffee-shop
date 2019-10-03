@@ -13,5 +13,5 @@ function submitForm(e){
 
 //Get form values
 function getInputVal(id){
-    return document.getElementById(id).nodeValue;
+    return document.getElementById(id).value;
 }
