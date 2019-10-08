@@ -6,7 +6,7 @@ function submitForm(e){
 
     const name = getImputVal('name');
     const email = getImputVal('email');
-    const commenta = getImputVal('comments');
+    const comments = getImputVal('comments');
 
     console.log(name);
 }

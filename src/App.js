@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './inventory/Csinventory.js';
 import CoffeeTeaComp from './components/CoffeeTeaComp.jsx';
 import TreatsComp from './components/TreatsComp.jsx';
 
