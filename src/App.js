@@ -11,7 +11,7 @@ class App extends React.Component{
       coffee : [
         {
           id:'Single Drip',
-          summmary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
+          summary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request $5"
         },
         {
           id:'Pour-Over',
