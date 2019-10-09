@@ -3,10 +3,15 @@
  class CoffeeTeaComp extends React.Component {
      render() {
          return (
-            <tr>
-                <td>{this.props.coffee.id}</td>
-                <td>{this.props.coffee.summary}</td>
-            </tr>
+             <div>
+                <tr>
+                    <td>{this.props.coffee.id}</td>
+                </tr>
+                <tr>
+                    <td>{this.props.coffee.summary}</td>
+                </tr>
+                <br></br>
+            </div>
          )
      }
  }
