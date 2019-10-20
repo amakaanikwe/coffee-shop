@@ -9,6 +9,7 @@
                 </tr>
                 <tr>
                     <td>{this.props.coffee.summary}</td>
+                    <td>{this.props.coffee.price}</td>
                 </tr>
                 <br></br>
             </div>

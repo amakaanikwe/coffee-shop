@@ -9,6 +9,7 @@ class TreatsComp extends React.Component {
             </tr>
             <tr>
                 <td>{this.props.treats.summary}</td>
+                <td>{this.props.treats.price}</td>
             </tr>
             <br></br>
         </div>
