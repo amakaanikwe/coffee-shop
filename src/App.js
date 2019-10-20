@@ -78,6 +78,9 @@ class App extends React.Component{
               {this.state.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
           </tbody>
         </table>
+        <button>
+          Order Now
+        </button>
       </div>
     )
   }
