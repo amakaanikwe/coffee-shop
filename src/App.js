@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import CoffeeTeaComp from './components/CoffeeTeaComp.jsx';
 import TreatsComp from './components/TreatsComp.jsx';
+import Counter from './components/Counter.jsx';
 
 class App extends React.Component{
   constructor(props) {
