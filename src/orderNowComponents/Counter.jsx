@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Components} from 'react';
 
-class Counter extends Component {
+class Counter extends React.Component {
     state = {
         count: 0,
         tags: ['tag1', 'tag2', 'tag3']
@@ -9,7 +9,7 @@ class Counter extends Component {
 
     handleIncrement = () => {
         this.setState({ count: this.state.count + 1})
-    }
+    };
 
     render () {
         return(
@@ -31,9 +31,9 @@ class Counter extends Component {
         return classes;
     }
 
-    formatCount() {
-        ...
-    }
+    // formatCount() {
+    //     ...
+    // }
 
 
 
