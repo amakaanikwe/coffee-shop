@@ -2,15 +2,19 @@ import React, {Components} from 'react';
 import Counter from './Counter.jsx';
 
 class Counters extends React.Component {
- state = {
-     counter: [
-         { id: 1, value:0},
-         { id: 2, value:0},
-         { id: 3, value:0},
-         { id: 4, value:0},
-         { id: 5, value:0}
-     ]
- };
+    constructor(props) {
+        super(props);
+            this.state = {
+                counter: [
+                    { id: 1, value:0},
+                    { id: 2, value:0},
+                    { id: 3, value:0},
+                    { id: 4, value:0},
+                    { id: 5, value:0}
+                ]
+            }
+    }
+
  render() {
      return (
          <div>

@@ -1,11 +1,14 @@
 import React, {Components} from 'react';
 
 class Counter extends React.Component {
-    state = {
-        count: 0,
-        tags: ['tag1', 'tag2', 'tag3']
-    };
+    constructor(props) {
+        super(props);
+            this.state = {
+                count: 0,
+                tags: ['tag1', 'tag2', 'tag3']
+            };
 
+    };
 
     handleIncrement = () => {
         this.setState({ count: this.state.count + 1})
