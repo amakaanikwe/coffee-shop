@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import CoffeeTeaComp from './components/MenuComp/CoffeeTeaComp.jsx';
 import TreatsComp from './components/MenuComp/TreatsComp.jsx';
-// import Counters from './orderNowComponents/Counters.jsx';
+// import Counters from './components/OrderComponents/Counters.jsx';
 
 class App extends React.Component{
   constructor(props) {
