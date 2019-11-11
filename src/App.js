@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import CoffeeTeaComp from './components/CoffeeTeaComp.jsx';
-import TreatsComp from './components/TreatsComp.jsx';
-import Counters from './orderNowComponents/Counters.jsx';
+import CoffeeTeaComp from './components/MenuComp/CoffeeTeaComp.jsx';
+import TreatsComp from './components/MenuComp/TreatsComp.jsx';
+// import Counters from './orderNowComponents/Counters.jsx';
 
 class App extends React.Component{
   constructor(props) {
@@ -82,7 +82,7 @@ class App extends React.Component{
         <button>
           Order Now
         </button>
-        <Counters />
+        {/* <Counters /> */}
       </div>
     )
   }
