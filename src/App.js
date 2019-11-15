@@ -68,7 +68,7 @@ class App extends React.Component{
   render () {
     return (
       <div>
-        <MenuComp />
+        <MenuComp menu = {this.state} />
       </div>
     )
   }
