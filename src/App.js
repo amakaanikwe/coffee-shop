@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import CoffeeTeaComp from './components/MenuComp/CoffeeTeaComp.jsx';
-import TreatsComp from './components/MenuComp/TreatsComp.jsx';
+import MenuComp from './components/MenuComp/MenuComp.jsx';
 // import Counters from './components/OrderComponents/Counters.jsx';
 
 class App extends React.Component{
@@ -69,20 +68,7 @@ class App extends React.Component{
   render () {
     return (
       <div>
-        <table>
-          <tbody>
-              {this.state.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
-          </tbody>
-        </table>
-        <table>
-          <tbody>
-              {this.state.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
-          </tbody>
-        </table>
-        <button>
-          Order Now
-        </button>
-        {/* <Counters /> */}
+        <MenuComp />
       </div>
     )
   }
