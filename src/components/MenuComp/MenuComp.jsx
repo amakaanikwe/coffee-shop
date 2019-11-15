@@ -10,12 +10,12 @@ class MenuComp extends React.Component{
         <div>
           <table>
             <tbody>
-                {this.props.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
+                {this.props.menu.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
             </tbody>
           </table>
           <table>
             <tbody>
-                {this.props.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
+                {this.props.menu.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
             </tbody>
           </table>
           <button>
