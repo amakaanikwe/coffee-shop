@@ -21,7 +21,7 @@ class App extends React.Component{
         },
         {
           id:'Cafe Au Lait',
-          summary: "hoice of drip coffee with steamed milk on top",
+          summary: "Choice of drip coffee with steamed milk on top",
           price: "5"
         },
         {
@@ -38,7 +38,7 @@ class App extends React.Component{
       treats : [
         {
           id:'Bread Basket',
-          summary: "ssortment of fresh baked fruit breads and muffins",
+          summary: "Assortment of fresh baked fruit breads and muffins",
           price: "5"
         },
         {
