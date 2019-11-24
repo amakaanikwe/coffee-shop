@@ -8,11 +8,13 @@ class MenuComp extends React.Component{
     render () {
       return (
         <div>
+          <div>Coffee</div>
           <table>
             <tbody>
                 {this.props.menu.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
             </tbody>
           </table>
+          <div>Treats</div>
           <table>
             <tbody>
                 {this.props.menu.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
