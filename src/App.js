@@ -67,14 +67,17 @@ class App extends React.Component{
   
   render () {
     return (
-      <div className='orderToggle'>
+      <div>
         <MenuComp menu = {this.state} />
+        <button>
+            Order Now
+          </button>
       </div>
     )
   }
 
-  dynamic render. click on a button 
-  will be a toggle. shows on thing then when clicked will show another.
+  // dynamic render. click on a button 
+  // will be a toggle. shows on thing then when clicked will show another.
 
 };
 
