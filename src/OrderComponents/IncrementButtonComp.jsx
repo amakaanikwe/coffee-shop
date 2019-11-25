@@ -5,10 +5,10 @@ class IncrementButtonComp
     render() { 
         return ( 
             <div>
-                <button glyphicon glyphicon-menu-down>
+                <button className='glyphicon glyphicon-menu-down'>
                 </button>
                 <div>{}</div>
-                <button glyphicon glyphicon-menu-up>
+                <button className='glyphicon glyphicon-menu-up'>
                 </button>
             </div>
          );
