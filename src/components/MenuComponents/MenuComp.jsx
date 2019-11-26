@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import CoffeeTeaComp from './CoffeeTeaComp.jsx';
 import TreatsComp from './TreatsComp.jsx';
 
