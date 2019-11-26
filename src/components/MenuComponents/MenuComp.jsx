@@ -19,7 +19,6 @@ class MenuComp extends React.Component{
                 {this.props.menu.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
             </tbody>
           </table>
-          {/* <Counters /> */}
         </div>
       )
     }

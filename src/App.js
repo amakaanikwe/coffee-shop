@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import MenuComp from './components/MenuComponents/MenuComp.jsx';
+import OrderComp from './components/OrderComponents/OrderComp.jsx';
 // import Counters from './components/OrderComponents/Counters.jsx';
 
 class App extends React.Component{
@@ -69,6 +70,7 @@ class App extends React.Component{
     return (
       <div>
         <MenuComp menu = {this.state} />
+        <OrderComp menu = {this.state} />
         <button>
             Order Now
           </button>
