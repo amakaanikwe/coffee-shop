@@ -1,6 +1,6 @@
 import React from 'react';
 
-class TreatsComp extends React.Component {
+class OrderTreatsComp extends React.Component {
     render() {
         return (
             <div>
@@ -17,4 +17,4 @@ class TreatsComp extends React.Component {
     }
 }
 
-export default TreatsComp;
+export default OrderTreatsComp;
