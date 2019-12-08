@@ -65,13 +65,13 @@ class App extends React.Component{
       ]
     };  
   }
-  
+  // onClick={}
   render () {
     return (
       <div>
         <MenuComp menu = {this.state} />
         <OrderComp menu = {this.state} />
-        <button onClick={}>
+        <button> 
             Order Now
           </button>
       </div>
