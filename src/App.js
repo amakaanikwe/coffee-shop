@@ -9,6 +9,7 @@ class App extends React.Component{
     super(props);
 
     this.state = {
+      turnToggleOn: true,
       coffee : [
         {
           id:'Single Drip',
