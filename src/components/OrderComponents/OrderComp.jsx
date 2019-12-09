@@ -19,7 +19,6 @@ class OrderComp extends React.Component{
                 {this.props.menu.treats.map((item, i) => <OrderTreatsComp key = {i} treats = {item} />)}
             </tbody>
           </table>
-          <button>Back to Menu</button>
           <button>Place Order</button>
         </div>
       )

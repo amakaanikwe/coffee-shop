@@ -85,7 +85,7 @@ class App extends React.Component{
           {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
         </div>
         <button onClick={this.handleClick}> 
-            Order Now
+        {this.state.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
           </button>
       </div>
     )
