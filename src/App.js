@@ -64,16 +64,17 @@ class App extends React.Component{
           summary: "With syrup, butter and lots of berries",
           price: "9"
         } 
-      ]
-
-      this.handleClick = this.handleClick.bind(this);
-    };  
+      ],
+    }; 
+    
+    this.handleClick = this.handleClick.bind(this);
+    
   }
 
   handleClick() {
-    this.setState(prevState => {
-      turn.ToggleOn: !prevState.turnToggleOn
-    });
+    this.setState(prevState => ({
+      turnToggleOn: !prevState.turnToggleOn
+    }));
   }
   // onClick={}
   render () {
@@ -82,7 +83,7 @@ class App extends React.Component{
         {/* <MenuComp menu = {this.state} />
         <OrderComp menu = {this.state} /> */}
         <div>
-          {this.state.istoggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
+          {this.state.turnToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
         </div>
         <button onClick={this.handleClick}> 
             Order Now
