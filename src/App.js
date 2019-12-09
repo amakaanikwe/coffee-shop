@@ -10,7 +10,7 @@ class App extends React.Component{
     super(props);
 
     this.state = {
-      turnToggleOn: true,
+      turnCompToggleOn: true,
       coffee : [
         {
           id:'Single Drip',
@@ -73,7 +73,7 @@ class App extends React.Component{
 
   handleClick() {
     this.setState(prevState => ({
-      turnToggleOn: !prevState.turnToggleOn
+      turnCompToggleOn: !prevState.turnCompToggleOn
     }));
   }
 
@@ -82,7 +82,7 @@ class App extends React.Component{
       <div>
 
         <div>
-          {this.state.turnToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
+          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
         </div>
         <button onClick={this.handleClick}> 
             Order Now
