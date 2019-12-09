@@ -68,7 +68,7 @@ class App extends React.Component{
     }; 
     
     this.handleClick = this.handleClick.bind(this);
-    
+
   }
 
   handleClick() {
@@ -76,12 +76,11 @@ class App extends React.Component{
       turnToggleOn: !prevState.turnToggleOn
     }));
   }
-  // onClick={}
+
   render () {
     return (
       <div>
-        {/* <MenuComp menu = {this.state} />
-        <OrderComp menu = {this.state} /> */}
+
         <div>
           {this.state.turnToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
         </div>
