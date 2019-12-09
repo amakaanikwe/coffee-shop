@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import MenuComp from './components/MenuComponents/MenuComp.jsx';
 import OrderComp from './components/OrderComponents/OrderComp.jsx';
+import { tsImportEqualsDeclaration } from '@babel/types';
 // import Counters from './components/OrderComponents/Counters.jsx';
 
 class App extends React.Component{
@@ -64,15 +65,26 @@ class App extends React.Component{
           price: "9"
         } 
       ]
+
+      this.handleClick = this.handleClick.bind(this);
     };  
+  }
+
+  handleClick() {
+    this.setState(prevState => {
+      turn.ToggleOn: !prevState.turnToggleOn
+    });
   }
   // onClick={}
   render () {
     return (
       <div>
-        <MenuComp menu = {this.state} />
-        <OrderComp menu = {this.state} />
-        <button> 
+        {/* <MenuComp menu = {this.state} />
+        <OrderComp menu = {this.state} /> */}
+        <div>
+          {this.state.istoggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
+        </div>
+        <button onClick={this.handleClick}> 
             Order Now
           </button>
       </div>
