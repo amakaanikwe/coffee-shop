@@ -1,4 +1,5 @@
 import React from 'react';
+import IncrementButtonComp from './IncrementButtonComp.jsx'
 
 class OrderCoffeeComp extends React.Component {
     render() {
@@ -10,8 +11,9 @@ class OrderCoffeeComp extends React.Component {
                <tr>
                    <td>{this.props.coffee.summary}</td>
                    <td>{this.props.coffee.price}</td>
+                   <td><IncrementButtonComp/></td>
                </tr>
-               <br></br>
+              
            </div>
         )
     }

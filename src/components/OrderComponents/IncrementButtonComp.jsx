@@ -1,7 +1,7 @@
 import React, {Components} from 'react';
 
 class IncrementButtonComp
- extends Component {
+ extends React.Component {
     render() { 
         return ( 
             <div>
