@@ -11,6 +11,18 @@ class App extends React.Component{
 
     this.state = {
       turnCompToggleOn: true,
+      order: {
+        Single_Drip: 0,
+        Pour_Over: 0,
+        Cafe_Au_Lait: 0,
+        Black_Tea: 0,
+        Green_Tea: 0,
+        Bread_Basket: 0,
+        Granola: 0,
+        Belgian_Waffle: 0,
+        Scrambled_eggs: 0,
+        Blueberry_Pancakes: 0,
+      },
       coffee : [
         {
           id:'Single Drip',
