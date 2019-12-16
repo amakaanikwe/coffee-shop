@@ -11,7 +11,13 @@ class OrderTreatsComp extends React.Component {
             <tr>
                 <td>{this.props.treatsItem.summary}</td>
                 <td>{this.props.treatsItem.price}</td>
-                <td><IncrementButtonComp/></td>
+                <td>                
+                    <button onClick={()=>this.props.onTreatsIncrement(this.props.treatsItem)} className='glyphicon glyphicon-menu-up'>
+                    </button>
+                    <button className='glyphicon glyphicon-menu-down'>
+                    </button>
+                    <div>{this.props.treatsItem.value}</div>
+                </td>
             </tr>
             <br></br>
         </React.Fragment>

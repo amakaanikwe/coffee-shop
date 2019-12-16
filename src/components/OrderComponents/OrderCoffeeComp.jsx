@@ -14,9 +14,9 @@ class OrderCoffeeComp extends React.Component {
                    <td>
                        <button onClick={()=>this.props.onCoffeeIncrement(this.props.coffeeItem)} className='glyphicon glyphicon-menu-up'>
                         </button>
-                        <div>{this.props.coffeeItem.value}</div>
                         <button className='glyphicon glyphicon-menu-down'>
                         </button>
+                        <div>{this.props.coffeeItem.value}</div>
                     </td>
                </tr>
               
