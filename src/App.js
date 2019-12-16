@@ -11,76 +11,90 @@ class App extends React.Component{
 
     this.state = {
       turnCompToggleOn: true,
-      order: {
-        Single_Drip: 0,
-        Pour_Over: 0,
-        Cafe_Au_Lait: 0,
-        Black_Tea: 0,
-        Green_Tea: 0,
-        Bread_Basket: 0,
-        Granola: 0,
-        Belgian_Waffle: 0,
-        Scrambled_eggs: 0,
-        Blueberry_Pancakes: 0,
-      },
       coffee : [
         {
           id:'Single Drip',
           summary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request",
-          price: "5"
+          price: "5",
+          value: 0
         },
         {
           id:'Pour-Over',
           summary: "Pour-over of rotating single-origin coffee",
-          price: "5"
+          price: "5",
+          value: 0
         },
         {
           id:'Cafe Au Lait',
           summary: "Choice of drip coffee with steamed milk on top",
-          price: "5"
+          price: "5",
+          value: 0
         },
         {
           id:'Black Tea',
           summary: "Assortment of Black Teas",
-          price: "4"
+          price: "4",
+          value: 0
         },
         {
           id:'Green Tea',
           summary: "Assortment of Green Teas",
-          price: "3"
+          price: "3",
+          value: 0
         }   
       ],
       treats : [
         {
           id:'Bread Basket',
           summary: "Assortment of fresh baked fruit breads and muffins",
-          price: "5"
+          price: "5",
+          value: 0
         },
         {
           id:'Granola',
           summary: "Natural cereal of honey toasted oats, raisins, almonds and dates",
-          price: "8"
+          price: "8",
+          value: 0
         },
         {
           id:'Belgian Waffle',
           summary: "Vanilla flavored batter with malted flour",
-          price: "11"
+          price: "11",
+          value: 0
         },
         {
           id:'Scrambled eggs',
           summary: "Scrambled eggs, roasted red pepper and garlic, with green onions",
-          price: "8"
+          price: "8",
+          value: 0
         },
         {
           id:'Blueberry Pancakes',
           summary: "With syrup, butter and lots of berries",
-          price: "9"
+          price: "9",
+          value: 0
         } 
       ],
     }; 
     
     this.handleClick = this.handleClick.bind(this);
 
+  }
+
+  handleCoffeeIncrement = counter => {
+    const coffee = [...this.state.coffee];
+    const index = coffee.indexOf(counter);
+    coffee[index] = {...counter};
+    coffee[index].value++;
+    this.setState({ coffee })
+  }
+
+  handleTreatsIncrement = counter => {
+    const treats = [...this.state.treats];
+    const index = treats.indexOf(counter);
+    treats[index] = {...counter};
+    treats[index].value++;
+    this.setState({ treats })
   }
 
   handleClick() {
