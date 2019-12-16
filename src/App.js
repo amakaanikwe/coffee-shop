@@ -78,21 +78,22 @@ class App extends React.Component{
     }; 
     
     this.handleClick = this.handleClick.bind(this);
+    this.handleCoffeeIncrement = this.handleCoffeeIncrement.bind(this);
 
   }
 
-  handleCoffeeIncrement = counter => {
+  handleCoffeeIncrement (coffeeItem) {
     const coffee = [...this.state.coffee];
-    const index = coffee.indexOf(counter);
-    coffee[index] = {...counter};
+    const index = coffee.indexOf(coffeeItem);
+    coffee[index] = {...coffeeItem};
     coffee[index].value++;
     this.setState({ coffee })
-  }
+  };
 
-  handleTreatsIncrement = counter => {
+  handleTreatsIncrement = treatsItem => {
     const treats = [...this.state.treats];
-    const index = treats.indexOf(counter);
-    treats[index] = {...counter};
+    const index = treats.indexOf(treatsItem);
+    treats[index] = {...treatsItem};
     treats[index].value++;
     this.setState({ treats })
   }
@@ -108,7 +109,7 @@ class App extends React.Component{
       <div>
 
         <div>
-          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} />}
+          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement} />}
         </div>
         <button onClick={this.handleClick}> 
         {this.state.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}

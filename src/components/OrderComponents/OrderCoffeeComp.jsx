@@ -4,17 +4,23 @@ import IncrementButtonComp from './IncrementButtonComp.jsx'
 class OrderCoffeeComp extends React.Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                <tr>
                    <td>{this.props.coffeeItem.id}</td>
                </tr>
                <tr>
                    <td>{this.props.coffeeItem.summary}</td>
                    <td>{this.props.coffeeItem.price}</td>
-                   <td><IncrementButtonComp/></td>
+                   <td>
+                       <button onClick={()=>this.props.onCoffeeIncrement(this.props.coffeeItem)} className='glyphicon glyphicon-menu-up'>
+                        </button>
+                        <div>{this.props.coffeeItem.value}</div>
+                        <button className='glyphicon glyphicon-menu-down'>
+                        </button>
+                    </td>
                </tr>
               
-           </div>
+           </React.Fragment>
         )
     }
 }

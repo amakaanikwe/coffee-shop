@@ -10,7 +10,7 @@ class OrderComp extends React.Component{
           <div>Coffee & Tea</div>
           <table>
             <tbody>
-                {this.props.menu.coffee.map((coffeeItem, i) => <OrderCoffeeComp key = {i} coffeeItem = {coffeeItem} />)}
+                {this.props.menu.coffee.map((coffeeItem, i) => <OrderCoffeeComp key = {i} coffeeItem = {coffeeItem} onCoffeeIncrement = {this.props.onCoffeeIncrement} />)}
             </tbody>
           </table>
           <div>Treats</div>

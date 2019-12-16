@@ -4,7 +4,7 @@ import IncrementButtonComp from './IncrementButtonComp.jsx'
 class OrderTreatsComp extends React.Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
             <tr>
                 <td>{this.props.treatsItem.id}</td>
             </tr>
@@ -14,7 +14,7 @@ class OrderTreatsComp extends React.Component {
                 <td><IncrementButtonComp/></td>
             </tr>
             <br></br>
-        </div>
+        </React.Fragment>
         )
     }
 }
