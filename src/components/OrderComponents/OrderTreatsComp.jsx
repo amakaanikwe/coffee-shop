@@ -6,11 +6,11 @@ class OrderTreatsComp extends React.Component {
         return (
             <div>
             <tr>
-                <td>{this.props.treats.id}</td>
+                <td>{this.props.treatsItem.id}</td>
             </tr>
             <tr>
-                <td>{this.props.treats.summary}</td>
-                <td>{this.props.treats.price}</td>
+                <td>{this.props.treatsItem.summary}</td>
+                <td>{this.props.treatsItem.price}</td>
                 <td><IncrementButtonComp/></td>
             </tr>
             <br></br>
