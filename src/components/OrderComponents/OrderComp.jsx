@@ -10,13 +10,13 @@ class OrderComp extends React.Component{
           <div>Coffee & Tea</div>
           <table>
             <tbody>
-                {this.props.menu.coffee.map((coffeeItem, i) => <OrderCoffeeComp key = {i} coffeeItem = {coffeeItem} onCoffeeIncrement = {this.props.onCoffeeIncrement} />)}
+                {this.props.menu.coffee.map((coffeeItem, i) => <OrderCoffeeComp key = {i} coffeeItem = {coffeeItem} onCoffeeIncrement = {this.props.onCoffeeIncrement} onCoffeeDecrement = {this.props.onCoffeeDecrement}  />)}
             </tbody>
           </table>
           <div>Treats</div>
           <table>
             <tbody>
-                {this.props.menu.treats.map((treatsItem, i) => <OrderTreatsComp key = {i} treatsItem = {treatsItem} onTreatsIncrement = {this.props.onTreatsIncrement} />)}
+                {this.props.menu.treats.map((treatsItem, i) => <OrderTreatsComp key = {i} treatsItem = {treatsItem} onTreatsIncrement = {this.props.onTreatsIncrement} onTreatsDecrement = {this.props.onTreatsDecrement} />)}
             </tbody>
           </table>
           <button>Place Order</button>

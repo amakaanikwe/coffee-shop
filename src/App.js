@@ -78,15 +78,22 @@ class App extends React.Component{
     }; 
     
     this.handleClick = this.handleClick.bind(this);
-    this.handleCoffeeIncrement = this.handleCoffeeIncrement.bind(this);
 
   }
 
-  handleCoffeeIncrement (coffeeItem) {
+  handleCoffeeIncrement = coffeeItem => {
     const coffee = [...this.state.coffee];
     const index = coffee.indexOf(coffeeItem);
     coffee[index] = {...coffeeItem};
     coffee[index].value++;
+    this.setState({ coffee })
+  };
+
+  handleCoffeeDecrement = coffeeItem => {
+    const coffee = [...this.state.coffee];
+    const index = coffee.indexOf(coffeeItem);
+    coffee[index] = {...coffeeItem};
+    coffee[index].value--;
     this.setState({ coffee })
   };
 
@@ -98,6 +105,15 @@ class App extends React.Component{
     this.setState({ treats })
   }
 
+  handleTreatsDecrement = treatsItem => {
+    const treats = [...this.state.treats];
+    const index = treats.indexOf(treatsItem);
+    treats[index] = {...treatsItem};
+    treats[index].value--;
+    this.setState({ treats })
+  }
+
+  // Component Toggle
   handleClick() {
     this.setState(prevState => ({
       turnCompToggleOn: !prevState.turnCompToggleOn
@@ -109,7 +125,7 @@ class App extends React.Component{
       <div>
 
         <div>
-          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement} onTreatsIncrement = {this.handleTreatsIncrement}/>}
+          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement}onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} />}
         </div>
         <button onClick={this.handleClick}> 
         {this.state.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
