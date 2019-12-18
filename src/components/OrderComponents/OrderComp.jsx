@@ -20,6 +20,9 @@ class OrderComp extends React.Component{
             </tbody>
           </table>
           <button>Place Order</button>
+          <button onClick={()=>this.props.onCompToggle()}> 
+        {this.props.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
+          </button>
         </div>
       )
     }
