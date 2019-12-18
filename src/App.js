@@ -77,7 +77,7 @@ class App extends React.Component{
       ],
     }; 
     
-    this.handleClick = this.handleClick.bind(this);
+    this.handleCompToggle = this.handleCompToggle.bind(this);
 
   }
 
@@ -114,7 +114,7 @@ class App extends React.Component{
   }
 
   // Component Toggle
-  handleClick() {
+  handleCompToggle() {
     this.setState(prevState => ({
       turnCompToggleOn: !prevState.turnCompToggleOn
     }));
@@ -125,11 +125,11 @@ class App extends React.Component{
       <div>
 
         <div>
-          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement}onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} />}
+          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} onCompToggle = {this.handleCompToggle} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement}onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} />}
         </div>
-        <button onClick={this.handleClick}> 
+        {/* <button onClick={this.handleClick}> 
         {this.state.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
-          </button>
+          </button> */}
       </div>
     )
   }

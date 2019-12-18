@@ -19,6 +19,9 @@ class MenuComp extends React.Component{
                 {this.props.menu.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
             </tbody>
           </table>
+          <button onClick={()=>this.props.onCompToggle()}> 
+        {!this.props.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
+          </button>
         </div>
       )
     }
