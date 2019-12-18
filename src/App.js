@@ -127,9 +127,6 @@ class App extends React.Component{
         <div>
           {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} onCompToggle = {this.handleCompToggle} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement}onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} onCompToggle = {this.handleCompToggle} />}
         </div>
-        {/* <button onClick={this.handleClick}> 
-        {this.state.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
-          </button> */}
       </div>
     )
   }
