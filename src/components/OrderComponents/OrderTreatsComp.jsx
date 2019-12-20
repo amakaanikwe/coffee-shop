@@ -1,5 +1,5 @@
 import React from 'react';
-import IncrementButtonComp from './IncrementButtonComp.jsx'
+
 
 class OrderTreatsComp extends React.Component {
     render() {
