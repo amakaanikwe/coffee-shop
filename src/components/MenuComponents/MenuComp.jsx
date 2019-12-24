@@ -6,7 +6,7 @@ class MenuComp extends React.Component{
       
     render () {
       return (
-        <div>
+        <div class="container-fluid">
           <div>Coffee & Tea</div>
           <table>
             <tbody>

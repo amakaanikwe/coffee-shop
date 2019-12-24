@@ -3,11 +3,11 @@
  class CoffeeTeaComp extends React.Component {
      render() {
          return (
-             <div>
-                <tr>
+             <div class="row">
+                <tr class="column-sm-12">
                     <td>{this.props.coffee.id}</td>
                 </tr>
-                <tr>
+                <tr class="colum-sm-12">
                     <td>{this.props.coffee.summary}</td>
                     <td>{this.props.coffee.price}</td>
                 </tr>
