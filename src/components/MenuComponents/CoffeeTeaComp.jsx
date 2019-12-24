@@ -3,16 +3,18 @@
  class CoffeeTeaComp extends React.Component {
      render() {
          return (
-             <div class="row">
-                <tr class="column-sm-12">
-                    <td>{this.props.coffee.id}</td>
-                </tr>
-                <tr class="colum-sm-12">
-                    <td>{this.props.coffee.summary}</td>
-                    <td>{this.props.coffee.price}</td>
-                </tr>
+             <React.Fragment>
+             <tr>
+                <td class="column-lg-12">
+                    {this.props.coffee.id}
+                </td>
+            </tr> 
+            <tr>
+                <td class="column-lg-8">{this.props.coffee.summary}</td>
+                <td class="column-lg-4">{this.props.coffee.price}</td>
+            </tr>
                 <br></br>
-            </div>
+                </React.Fragment>
          )
      }
  }
