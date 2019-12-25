@@ -16,8 +16,9 @@ class OrderTreatsComp extends React.Component {
                     </button>
                     <button onClick={()=>this.props.onTreatsDecrement(this.props.treatsItem)} className='glyphicon glyphicon-menu-down'>
                     </button>
-                    <div>{this.props.treatsItem.value}</div>
                 </td>
+                <td>{this.props.treatsItem.value}</td>
+                       
             </tr>
             <br></br>
         </React.Fragment>
