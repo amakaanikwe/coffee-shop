@@ -81,6 +81,8 @@ class App extends React.Component{
 
   }
 
+  // Order Coffee counters
+
   handleCoffeeIncrement = coffeeItem => {
     const coffee = [...this.state.coffee];
     const index = coffee.indexOf(coffeeItem);
@@ -96,6 +98,8 @@ class App extends React.Component{
     coffee[index].value--;
     this.setState({ coffee })
   };
+
+  // Order Treats Counters
 
   handleTreatsIncrement = treatsItem => {
     const treats = [...this.state.treats];

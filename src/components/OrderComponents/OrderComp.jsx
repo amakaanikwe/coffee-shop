@@ -19,10 +19,10 @@ class OrderComp extends React.Component{
                 {this.props.menu.treats.map((treatsItem, i) => <OrderTreatsComp key = {i} treatsItem = {treatsItem} onTreatsIncrement = {this.props.onTreatsIncrement} onTreatsDecrement = {this.props.onTreatsDecrement} />)}
             </tbody>
           </table>
-          <button>Place Order</button>
           <button onClick={()=>this.props.onCompToggle()}> 
         {this.props.turnCompToggleOn ? 'Order Now' : 'Back to Menu'}
           </button>
+          <button>Place Order</button>
         </div>
       )
     }

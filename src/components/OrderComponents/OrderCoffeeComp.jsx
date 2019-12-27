@@ -1,9 +1,10 @@
 import React from 'react';
+import OrderCompStyle from './OrderCompStyle.css';
 
 class OrderCoffeeComp extends React.Component {
     render() {
         return (
-            <React.Fragment>
+            <div className='style'>
                <tr>
                    <td>{this.props.coffeeItem.id}</td>
                </tr>
@@ -20,7 +21,7 @@ class OrderCoffeeComp extends React.Component {
                     
                </tr>
               
-           </React.Fragment>
+           </div>
         )
     }
 }
