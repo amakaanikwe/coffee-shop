@@ -1,9 +1,10 @@
 import React from 'react';
+import './CoffeeTreatsCompStyle.css'
 
 class TreatsComp extends React.Component {
     render() {
         return (
-            <div>
+            <div className='compStyle'>
             <tr>
                 <td>{this.props.treats.id}</td>
             </tr>

@@ -3,7 +3,6 @@ import './App.css';
 import MenuComp from './components/MenuComponents/MenuComp.jsx';
 import OrderComp from './components/OrderComponents/OrderComp.jsx';
 import { tsImportEqualsDeclaration } from '@babel/types';
-// import Counters from './components/OrderComponents/Counters.jsx';
 
 class App extends React.Component{
   constructor(props) {
@@ -82,7 +81,6 @@ class App extends React.Component{
   }
 
   // Order Coffee counters
-
   handleCoffeeIncrement = coffeeItem => {
     const coffee = [...this.state.coffee];
     const index = coffee.indexOf(coffeeItem);
@@ -100,7 +98,6 @@ class App extends React.Component{
   };
 
   // Order Treats Counters
-
   handleTreatsIncrement = treatsItem => {
     const treats = [...this.state.treats];
     const index = treats.indexOf(treatsItem);
