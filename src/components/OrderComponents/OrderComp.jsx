@@ -7,7 +7,11 @@ class OrderComp extends React.Component{
     render () {
       return (
         <div className="container-fluid menuStyle">
-          <div>Coffee & Tea</div>
+          <div className='row'>
+            <div className='col-sm-3'>
+              <div className='sectionStyle'>Coffee & Tea</div>
+            </div>
+          </div>
           <br></br>
           <table className='row'>
             <tbody className='col-sm-12'>
@@ -15,7 +19,13 @@ class OrderComp extends React.Component{
             </tbody>
           </table>
           <br></br>
-          <div>Treats</div>
+          <div className='row'>
+            <div className='col-sm-3'>
+            <br></br>
+            <br></br>
+              <div className='sectionStyle'>Treats</div>
+            </div>
+          </div>
           <br></br>
           <table className='row'>
             <tbody className='col-sm-12'>
