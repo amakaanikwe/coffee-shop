@@ -4,7 +4,7 @@ import React from 'react';
 class OrderTreatsComp extends React.Component {
     render() {
         return (
-            <React.Fragment>
+            <div className='style'>
             <tr>
                 <td>{this.props.treatsItem.id}</td>
             </tr>
@@ -21,7 +21,7 @@ class OrderTreatsComp extends React.Component {
                        
             </tr>
             <br></br>
-        </React.Fragment>
+        </div>
         )
     }
 }

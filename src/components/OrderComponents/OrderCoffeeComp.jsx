@@ -4,7 +4,7 @@ import './OrderCompStyle.css';
 class OrderCoffeeComp extends React.Component {
     render() {
         return (
-            <div className='container style'>
+            <div className='style'>
                <tr>
                    <td>{this.props.coffeeItem.id}</td>
                </tr>
