@@ -1,9 +1,10 @@
 .style {
     border-bottom: solid;
     border-width: .5px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .buttonStyle {
-
+    font-size: 12px;
 }

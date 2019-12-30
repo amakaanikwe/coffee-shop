@@ -8,7 +8,7 @@ class MenuComp extends React.Component{
     render () {
       return (
         <div className="container-fluid menuStyle">
-          <div>Coffee & Tea</div>
+          <div className='sectionStyle'>Coffee & Tea</div>
           <br></br>
           <table className='row'>
             <tbody className='col-sm-12'>

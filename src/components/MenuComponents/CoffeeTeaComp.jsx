@@ -15,7 +15,7 @@
                 <td className="col-sm-2">{this.props.coffee.price}</td>
             </tr>
                 <br></br>
-                </div>
+            </div>
          )
      }
  }
