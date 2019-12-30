@@ -5,6 +5,16 @@
     padding-bottom: 15px;
 }
 
+.priceStyle {
+    padding-left: 5px;
+}
+
 .buttonStyle {
     font-size: 12px;
+    padding-left: 20px;
+}
+
+.itemNumStyle {
+    padding-top: 4px;
+    padding-left: 4px;
 }
