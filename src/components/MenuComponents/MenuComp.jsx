@@ -15,6 +15,7 @@ class MenuComp extends React.Component{
                 {this.props.menu.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
             </tbody>
           </table>
+          <br></br>
           <div>Treats</div>
           <br></br>
           <table className='row'>

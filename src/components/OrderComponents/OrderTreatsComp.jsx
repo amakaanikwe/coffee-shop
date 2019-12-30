@@ -5,10 +5,10 @@ class OrderTreatsComp extends React.Component {
     render() {
         return (
             <div className='style'>
-            <tr>
+            <tr className='row'>
                 <td>{this.props.treatsItem.id}</td>
             </tr>
-            <tr>
+            <tr className='row'>
                 <td>{this.props.treatsItem.summary}</td>
                 <td>{this.props.treatsItem.price}</td>
                 <td>                

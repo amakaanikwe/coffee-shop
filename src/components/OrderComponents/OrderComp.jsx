@@ -6,7 +6,7 @@ class OrderComp extends React.Component{
       
     render () {
       return (
-        <div>
+        <div className="container-fluid menuStyle">
           <div>Coffee & Tea</div>
           <br></br>
           <table className='row'>
