@@ -14,6 +14,7 @@ class OrderComp extends React.Component{
                 {this.props.menu.coffee.map((coffeeItem, i) => <OrderCoffeeComp key = {i} coffeeItem = {coffeeItem} onCoffeeIncrement = {this.props.onCoffeeIncrement} onCoffeeDecrement = {this.props.onCoffeeDecrement}  />)}
             </tbody>
           </table>
+          <br></br>
           <div>Treats</div>
           <br></br>
           <table className='row'>

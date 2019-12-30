@@ -9,9 +9,9 @@ class OrderCoffeeComp extends React.Component {
                    <td className="col-sm-12">{this.props.coffeeItem.id}</td>
                </tr>
                <tr className='row'>
-                   <td className="col-sm-8">{this.props.coffeeItem.summary}</td>
-                   <td className="col-sm-2">{this.props.coffeeItem.price}</td>
-                   <td className='col-sm-2 buttonStyle'>
+                   <td className="col-sm-9">{this.props.coffeeItem.summary}</td>
+                   <td className="col-sm-1">{this.props.coffeeItem.price}</td>
+                   <td className='col-sm-1 buttonStyle'>
                        <button onClick={()=>this.props.onCoffeeIncrement(this.props.coffeeItem)} className='glyphicon glyphicon-menu-up'>
                         </button>
                         <button onClick={()=>this.props.onCoffeeDecrement(this.props.coffeeItem)} className='glyphicon glyphicon-menu-down'>
