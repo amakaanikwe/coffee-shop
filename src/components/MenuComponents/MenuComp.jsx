@@ -10,15 +10,15 @@ class MenuComp extends React.Component{
         <div className="container-fluid menuStyle">
           <div>Coffee & Tea</div>
           <br></br>
-          <table>
-            <tbody>
+          <table className='row'>
+            <tbody className='col-sm-12'>
                 {this.props.menu.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
             </tbody>
           </table>
           <div>Treats</div>
           <br></br>
-          <table>
-            <tbody>
+          <table className='row'>
+            <tbody className='col-sm-12'>
                 {this.props.menu.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
             </tbody>
           </table>
