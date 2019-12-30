@@ -8,18 +8,27 @@ class MenuComp extends React.Component{
     render () {
       return (
         <div className="container-fluid menuStyle">
-          <div className='sectionStyle'>Coffee & Tea</div>
-          <br></br>
+          <div className='row'>
+            <div className='col-sm-3'>
+              <div className='sectionStyle'>Coffee & Tea</div>
+            </div>
+          </div>
           <table className='row'>
             <tbody className='col-sm-12'>
+                <br></br>
                 {this.props.menu.coffee.map((item, i) => <CoffeeTeaComp key = {i} coffee = {item} />)}
             </tbody>
           </table>
-          <br></br>
-          <div>Treats</div>
-          <br></br>
+          <div className='row'>
+            <div className='col-sm-3'>
+            <br></br>
+            <br></br>
+              <div className='sectionStyle'>Treats</div>
+            </div>
+          </div>
           <table className='row'>
             <tbody className='col-sm-12'>
+                <br></br>
                 {this.props.menu.treats.map((item, i) => <TreatsComp key = {i} treats = {item} />)}
             </tbody>
           </table>

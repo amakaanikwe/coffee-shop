@@ -3,9 +3,13 @@
 }
 
 .sectionStyle {
-    padding-top: 15px;
+    font-size: 23px;
+    padding: 15px;
+    border: solid;
+    border-width: .5px;
 }
 
 .rowStyle {
+    display: block;
     padding-top: 15px;
 }
