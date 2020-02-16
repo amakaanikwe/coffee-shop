@@ -1,32 +1,32 @@
 [
     {
-      id:'Bread Basket',
-      summary: "Assortment of fresh baked fruit breads and muffins",
-      price: "5",
-      value: 0
+     "id": "Bread Basket",
+     "summary": "Assortment of fresh baked fruit breads and muffins",
+     "price": "5",
+     "value": 0
     },
     {
-      id:'Granola',
-      summary: "Natural cereal of honey toasted oats, raisins, almonds and dates",
-      price: "8",
-      value: 0
+     "id": "Granola",
+     "summary": "Natural cereal of honey toasted oats, raisins, almonds and dates",
+     "price": "8",
+     "value": 0
     },
     {
-      id:'Belgian Waffle',
-      summary: "Vanilla flavored batter with malted flour",
-      price: "11",
-      value: 0
+     "id": "Belgian Waffle",
+     "summary": "Vanilla flavored batter with malted flour",
+     "price": "11",
+     "value": 0
     },
     {
-      id:'Scrambled eggs',
-      summary: "Scrambled eggs, roasted red pepper and garlic, with green onions",
-      price: "8",
-      value: 0
+     "id": "Scrambled eggs",
+     "summary": "Scrambled eggs, roasted red pepper and garlic, with green onions",
+     "price": "8",
+     "value": 0
     },
     {
-      id:'Blueberry Pancakes',
-      summary: "With syrup, butter and lots of berries",
-      price: "9",
-      value: 0
+     "id": "Blueberry Pancakes",
+     "summary": "With syrup, butter and lots of berries",
+     "price": "9",
+     "value": 0
     } 
   ]
