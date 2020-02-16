@@ -6,6 +6,9 @@ import coffeedata from './inventory/coffeedata.json';
 import treatsdata from './inventory/treatsdata.json';
 import { tsImportEqualsDeclaration } from '@babel/types';
 
+// let cooffeedata = require('./inventory/coffeedata.json');
+
+
 class App extends React.Component{
   constructor(props) {
     super(props);
