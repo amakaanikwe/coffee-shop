@@ -1,32 +1,32 @@
 [
   {
-    id:'Single Drip',
-    summary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request",
-    price: "5",
-    value: 0
+    "id":"Single Drip",
+    "summary": "Choice of house blend or rotating single-origin drip coffee; decaf available on request",
+    "price": "5",
+    "value": 0
   },
   {
-    id:'Pour-Over',
-    summary: "Pour-over of rotating single-origin coffee",
-    price: "5",
-    value: 0
+    "id": "Pour-Over",
+    "summary": "Pour-over of rotating single-origin coffee",
+    "price": "5",
+    "value": 0
   },
   {
-    id:'Cafe Au Lait',
-    summary: "Choice of drip coffee with steamed milk on top",
-    price: "5",
-    value: 0
+    "id": "Cafe Au Lait",
+    "summary": "Choice of drip coffee with steamed milk on top",
+    "price": "5",
+    "value": 0
   },
   {
-    id:'Black Tea',
-    summary: "Assortment of Black Teas",
-    price: "4",
-    value: 0
+    "id": "Black Tea",
+    "summary": "Assortment of Black Teas",
+    "price": "4",
+    "value": 0
   },
   {
-    id:'Green Tea',
-    summary: "Assortment of Green Teas",
-    price: "3",
-    value: 0
+    "id": "Green Tea",
+    "summary": "Assortment of Green Teas",
+    "price": "3",
+    "value": 0
   }   
 ]
