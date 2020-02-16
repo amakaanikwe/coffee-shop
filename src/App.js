@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import MenuComp from './components/MenuComponents/MenuComp.jsx';
 import OrderComp from './components/OrderComponents/OrderComp.jsx';
+import coffeedata from './inventory/coffeedata.json';
+import treatsdata from './inventory/treatsdata.json';
 import { tsImportEqualsDeclaration } from '@babel/types';
 
 class App extends React.Component{
@@ -10,70 +12,8 @@ class App extends React.Component{
 
     this.state = {
       turnCompToggleOn: true,
-      coffee : [
-        {
-          id:'Single Drip',
-          summary: "Choice of house blend or rotating single-origin drip coffee; decaf available on request",
-          price: "5",
-          value: 0
-        },
-        {
-          id:'Pour-Over',
-          summary: "Pour-over of rotating single-origin coffee",
-          price: "5",
-          value: 0
-        },
-        {
-          id:'Cafe Au Lait',
-          summary: "Choice of drip coffee with steamed milk on top",
-          price: "5",
-          value: 0
-        },
-        {
-          id:'Black Tea',
-          summary: "Assortment of Black Teas",
-          price: "4",
-          value: 0
-        },
-        {
-          id:'Green Tea',
-          summary: "Assortment of Green Teas",
-          price: "3",
-          value: 0
-        }   
-      ],
-      treats : [
-        {
-          id:'Bread Basket',
-          summary: "Assortment of fresh baked fruit breads and muffins",
-          price: "5",
-          value: 0
-        },
-        {
-          id:'Granola',
-          summary: "Natural cereal of honey toasted oats, raisins, almonds and dates",
-          price: "8",
-          value: 0
-        },
-        {
-          id:'Belgian Waffle',
-          summary: "Vanilla flavored batter with malted flour",
-          price: "11",
-          value: 0
-        },
-        {
-          id:'Scrambled eggs',
-          summary: "Scrambled eggs, roasted red pepper and garlic, with green onions",
-          price: "8",
-          value: 0
-        },
-        {
-          id:'Blueberry Pancakes',
-          summary: "With syrup, butter and lots of berries",
-          price: "9",
-          value: 0
-        } 
-      ],
+      coffee : coffeedata,
+      treats : treatsdata,
     }; 
     
     this.handleCompToggle = this.handleCompToggle.bind(this);
@@ -126,7 +66,7 @@ class App extends React.Component{
       <div>
 
         <div>
-          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} onCompToggle = {this.handleCompToggle} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement}onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} onCompToggle = {this.handleCompToggle} />}
+          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} onCompToggle = {this.handleCompToggle} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement} onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} onCompToggle = {this.handleCompToggle} />}
         </div>
       </div>
     )
