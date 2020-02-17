@@ -32,7 +32,7 @@ class OrderTreatsComp extends React.Component {
         // return this.state.count === 0 ? 'zero' : this.state.count;
         // jsx expressions can be used the same way as objects
         const{value} = this.props.treatsItem;
-        return value === 0 | value <= 0 ? '0' : value;
+        return value === 0 | value <= 0 ? 0 : value;
     }
 }
 
