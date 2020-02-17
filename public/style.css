@@ -36,6 +36,11 @@
             overflow-y: auto;
         } 
 
+        #pStyle {
+          display: block;
+          border-bottom: 8px solid #ddb48b;
+        }
+
         header div h1 {
             font-size: 110px;
             margin-top: 40px;
@@ -80,6 +85,7 @@
           color: black;
           border-bottom: 1px solid black;
         }
+
 
         .aboutHeight {
           height: 160px;

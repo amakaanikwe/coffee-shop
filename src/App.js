@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import MenuComp from './components/MenuComponents/MenuComp.jsx';
 import OrderComp from './components/OrderComponents/OrderComp.jsx';
 import coffeedata from './inventory/coffeedata.json';
