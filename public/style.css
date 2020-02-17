@@ -39,6 +39,8 @@
         #pStyle {
           display: block;
           border-bottom: 8px solid #ddb48b;
+          padding-right: 10px;
+          margin-right: 40px;
         }
 
         header div h1 {
