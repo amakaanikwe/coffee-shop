@@ -19,12 +19,19 @@ class OrderCoffeeComp extends React.Component {
                         </button>
                     </div>
                     </td>
-                    <td className="col-sm-1 itemNumStyle">{this.props.coffeeItem.value}</td>
+                    <td className="col-sm-1 itemNumStyle"><span>{this.formatCount()}</span></td>
                     
                </tr>
                <br></br>
            </div>
         )
+    }
+
+    formatCount() {
+        // return this.state.count === 0 ? 'zero' : this.state.count;
+        // jsx expressions can be used the same way as objects
+        const{value} = this.props.coffeeItem;
+        return value === 0 | value <= 0 ? '0' : value;
     }
 }
 export default OrderCoffeeComp;
