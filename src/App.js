@@ -69,7 +69,13 @@ class App extends React.Component{
       <div>
 
         <div>
-          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} onCompToggle = {this.handleCompToggle} /> : <OrderComp menu = {this.state} onCoffeeIncrement = {this.handleCoffeeIncrement} onCoffeeDecrement = {this.handleCoffeeDecrement} onTreatsIncrement = {this.handleTreatsIncrement} onTreatsDecrement = {this.handleTreatsDecrement} onCompToggle = {this.handleCompToggle} />}
+          {this.state.turnCompToggleOn ? <MenuComp menu = {this.state} onCompToggle = {this.handleCompToggle} /> : <OrderComp 
+          menu = {this.state} 
+          onCoffeeIncrement = {this.handleCoffeeIncrement} 
+          onCoffeeDecrement = {this.handleCoffeeDecrement} 
+          onTreatsIncrement = {this.handleTreatsIncrement} 
+          onTreatsDecrement = {this.handleTreatsDecrement} 
+          onCompToggle = {this.handleCompToggle} />}
         </div>
       </div>
     )
