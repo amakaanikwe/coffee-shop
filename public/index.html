@@ -9,146 +9,218 @@
       content="Web site created using create-react-app"
     />
 
-
-
     <!-- Bootstrap 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link
-    rel="stylesheet"
-    href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css"
-  />
-  
-  <script src="https://kit.fontawesome.com/503c36bfc6.js"></script>
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/503c36bfc6.js"></script>
 
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
 
-  <!-- local files -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="../src/index.js"></script>
+    <!-- local files -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="../src/index.js"></script>
   </head>
 
   <body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-    <header  class="bgimg" class="jumbotron jumbotron-fluid">
-            <div class="title container center">
-              <h1>Brooklyn Brew</h1> 
-              <p>Coffee Shop</p> 
-            </div>
-            <nav class="nav navbar justify-content-center sticky-top fixed-bottom">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link"  href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-              </nav>
+    <header class="bgimg" class="jumbotron jumbotron-fluid">
+      <div class="title container center">
+        <h1>Brooklyn Brew</h1>
+        <p>Coffee Shop</p>
+      </div>
+      <nav class="nav navbar justify-content-center sticky-top fixed-bottom">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-     <!-- About Section -->
-  <div id="about" class="row">
+    <!-- About Section -->
+    <div id="about" class="row">
       <div class="col-md-5">
-       <img class="img-fluid" src="https://www.dropbox.com/s/i5imrvg7f1964uj/nathan-dumlao-Y3AqmbmtLQI-unsplash%20%28edited-Pixlr%29.jpg?raw=1" alt="Table Setting" width="600" height="750">
+        <img
+          class="img-fluid"
+          src="https://www.dropbox.com/s/i5imrvg7f1964uj/nathan-dumlao-Y3AqmbmtLQI-unsplash%20%28edited-Pixlr%29.jpg?raw=1"
+          alt="Table Setting"
+          width="600"
+          height="750"
+        />
       </div>
       <div class="col-md-7 container-fluid">
-      <div class="row">
-        <div class="col-md-12 aboutHeight container"></div>
-        <div class="col-md-12 m-2 container">
-        <h1 class="center">About Our Coffee</h1><br>
-        <p id="pStyle">Bathed in the sun soaked fields of Columbia our coffee beans are the product of the attention and care given to every bean. Our coffee is  a rich blend of flavors that  stems from centuries of knowledge in growing organic non GMO beans.  They are then roasted and distributed in Brooklyn where we insure the freshness and quality of every cup we serve. We only use <span>seasonal</span> ingredients. Come to one of our locations and have coffee with us sometime.</p>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-    <!-- Menu Section -->
-    <section>
-    <div id="menu" class="row">
-      <div  style="padding-left: 40px;" class="col-md-6 height"> 
-       <h1 class="text-center">Our Menu</h1><br>
-        <div id="root"></div>
-      </div>
-      <div class="col-md-6">
-        <img class="img-fluid" src="https://www.dropbox.com/s/ryfveksjvjxgy5q/joseph-gonzalez-fdlZBWIP0aM-unsplash%20%28edited-Pixlr%29.jpg?raw=1"  alt="Menu" style="width:100%">
-      </div>
-    </div>
-  </section>
-
-    <section class="coffeeStools">
-    </section>
-
-
-      <!-- Contact Section -->
-      <section id="contact">
         <div class="row">
-          <div class="col-md-5">
-           <img class="img-fluid" src="https://www.dropbox.com/s/kxeuyuczafk7gcv/tyler-nix-6o4uc16IkDs-unsplash%20%28edited-Pixlr%29.jpg?raw=1" alt="Table Setting" width="600" height="750">
-          </div>
-      
-          <div class="col-md-7 container-fluid bg-grey textRight">
-        
-              <h2 class="text-center">CONTACT US</h2><br>
-             
-              <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-5">
-                  <p><span class="glyphicon glyphicon-map-marker"></span> Sunset Park, Brooklyn</p>
-                  <p><span class="glyphicon glyphicon-phone"></span> 917.530.1515</p>
-                  <p><span class="glyphicon glyphicon-envelope"></span> email@BrooklynBrew.com</p>
-                </div>
-                <div class="col-sm-3"></div>
-              </div>
-              <div class="row">
-                <div id="contactForm" class="col-sm-12">
-                  <div class="row">
-                    <div class="col-sm-12 form-group">
-                      <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                    </div>
-                    <div class="col-sm-12 form-group">
-                      <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                    </div>
-                  </div>
-                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-                  <div class="row">
-                    <div class="col-sm-12 form-group">
-                      <button class="btn btn-default pull-right" type="submit">Send</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+          <div class="col-md-12 aboutHeight container"></div>
+          <div class="col-md-12 m-2 container">
+            <h1 class="center">About Our Coffee</h1>
+            <br />
+            <p id="pStyle">
+              Bathed in the sun soaked fields of Columbia our coffee beans are
+              the product of the attention and care given to every bean. Our
+              coffee is a rich blend of flavors that stems from centuries of
+              knowledge in growing organic non GMO beans. They are then roasted
+              and distributed in Brooklyn where we insure the freshness and
+              quality of every cup we serve. We only use
+              <span>seasonal</span> ingredients. Come to one of our locations
+              and have coffee with us sometime.
+            </p>
           </div>
         </div>
-        </section>
+      </div>
+    </div>
 
-        <footer class="container-fluid text-center">
-            <a href="#mainPage" title="To Top">
-              <span class="glyphicon glyphicon-chevron-up"></span>
-            </a>
-            <div>
-                <i class="fab fa-twitter fa-1x"></i>
-                <i class="fab fa-facebook-f fa-1x"></i>
-                <i class="fab fa-instagram fa-1x"></i>
+    <!-- Menu Section -->
+    <section>
+      <div id="menu" class="row">
+        <div style="padding-left: 40px;" class="col-md-6 height">
+          <h1 class="text-center">Our Menu</h1>
+          <br />
+          <div id="root"></div>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="img-fluid"
+            src="https://www.dropbox.com/s/ryfveksjvjxgy5q/joseph-gonzalez-fdlZBWIP0aM-unsplash%20%28edited-Pixlr%29.jpg?raw=1"
+            alt="Menu"
+            style="width: 100%;"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="coffeeStools"></section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            class="img-fluid"
+            src="https://www.dropbox.com/s/kxeuyuczafk7gcv/tyler-nix-6o4uc16IkDs-unsplash%20%28edited-Pixlr%29.jpg?raw=1"
+            alt="Table Setting"
+            width="600"
+            height="750"
+          />
+        </div>
+
+        <div class="col-md-7 container-fluid bg-grey textRight">
+          <h2 class="text-center">CONTACT US</h2>
+          <br />
+
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-5">
+              <p>
+                <span class="glyphicon glyphicon-map-marker"></span> Sunset
+                Park, Brooklyn
+              </p>
+              <p>
+                <span class="glyphicon glyphicon-phone"></span> 917.530.1515
+              </p>
+              <p>
+                <span class="glyphicon glyphicon-envelope"></span>
+                email@BrooklynBrew.com
+              </p>
             </div>
-        </footer>
+            <div class="col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div id="contactForm" class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <input
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="col-sm-12 form-group">
+                  <input
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                    required
+                  />
+                </div>
+              </div>
+              <textarea
+                class="form-control"
+                id="comments"
+                name="comments"
+                placeholder="Comment"
+                rows="5"
+              ></textarea
+              ><br />
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
+    <footer class="container-fluid text-center">
+      <a href="#mainPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <div>
+        <i class="fab fa-twitter fa-1x"></i>
+        <i class="fab fa-facebook-f fa-1x"></i>
+        <i class="fab fa-instagram fa-1x"></i>
+      </div>
+    </footer>
   </body>
   <script src="style.js"></script>
-
- 
 </html>
