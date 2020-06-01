@@ -35,7 +35,7 @@ class App extends React.Component {
     coffee[index] = { ...coffeeItem };
     if (coffee[index].value >= 0) {
       coffee[index].value--;
-    } else {coffee[index].value = 0 }
+    } else {coffee[index].value = 0 };
     
     this.setState({ coffee });
   };
@@ -54,6 +54,9 @@ class App extends React.Component {
     const index = treats.indexOf(treatsItem);
     treats[index] = { ...treatsItem };
     treats[index].value--;
+    if (treats[index].value >= 0) {
+      treats[index].value--;
+    } else {treats[index].value = 0 };
     this.setState({ treats });
   };
 
