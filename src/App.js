@@ -36,7 +36,6 @@ class App extends React.Component {
     if (coffee[index].value >= 0) {
       coffee[index].value--;
     } else {coffee[index].value = 0 };
-    
     this.setState({ coffee });
   };
 
