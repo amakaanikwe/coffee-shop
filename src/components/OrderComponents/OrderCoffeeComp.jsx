@@ -1,5 +1,5 @@
 import React from "react";
-import "./OrderCompStyle.css";
+import "../../css/OrderCompStyle.css";
 
 class OrderCoffeeComp extends React.Component {
   render() {
