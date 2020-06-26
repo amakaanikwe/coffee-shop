@@ -1,7 +1,7 @@
 import React from "react";
 import CoffeeTeaComp from "./CoffeeTeaComp.jsx";
 import TreatsComp from "./TreatsComp.jsx";
-import "./MenuCompStyle.css";
+import "../../css/MenuCompStyle.css";
 
 class MenuComp extends React.Component {
   render() {

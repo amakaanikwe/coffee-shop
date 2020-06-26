@@ -1,5 +1,5 @@
 import React from "react";
-import "./CoffeeTreatsCompStyle.css";
+import "../../css/CoffeeTreatsCompStyle.css";
 
 class TreatsComp extends React.Component {
   render() {
