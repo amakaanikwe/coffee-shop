@@ -4,7 +4,7 @@ import "../../css/CoffeeTreatsCompStyle.css";
 class TreatsComp extends React.Component {
   render() {
     return (
-      <div className="compStyle">
+      <div >
         <tr className="row">
           <td className="col-sm-12">{this.props.treats.id}</td>
         </tr>
