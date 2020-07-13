@@ -3,12 +3,15 @@ import React from "react";
 class ViewSumComp extends React.Component {
     render() {
       return (
-        <div>
- 
-          <button>
+        <React.Fragment>
+          <section>
+            <h1></h1>
 
+          </section>
+          <button>
+            Place Order
           </button>
-        </div>
+        </React.Fragment>
       );
     }
   }
