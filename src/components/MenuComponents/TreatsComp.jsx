@@ -5,7 +5,7 @@ class TreatsComp extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <tr className="row">
+        <tr className="row compStyle">
           <td className="col-sm-12">{this.props.treats.id}</td>
         </tr>
         <tr className="row">

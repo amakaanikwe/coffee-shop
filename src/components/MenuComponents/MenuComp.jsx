@@ -33,7 +33,7 @@ class MenuComp extends React.Component {
             <tbody className="col-sm-12">
               <br></br>
               {this.props.menu.treats.map((item, i) => (
-                <TreatsComp key={i} treats={item} className="compStyle"/>
+                <TreatsComp key={i} treats={item} />
               ))}
             </tbody>
           </table>
