@@ -4,8 +4,8 @@ import "../../css/CoffeeTreatsCompStyle.css";
 class CoffeeTeaComp extends React.Component {
   render() {
     return (
-      <div className="compStyle">
-        <tr className="row">
+      <React.Fragment>
+        <tr className="row compStyle">
           <td className="col-sm-12">{this.props.coffee.id}</td>
         </tr>
         <tr className="row">
@@ -13,7 +13,7 @@ class CoffeeTeaComp extends React.Component {
           <td className="col-sm-2">{this.props.coffee.price}</td>
         </tr>
         <br></br>
-      </div>
+      </React.Fragment>
     );
   }
 }
