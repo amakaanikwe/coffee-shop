@@ -4,8 +4,8 @@ import "../../css/OrderCompStyle.css";
 class OrderTreatsComp extends React.Component {
   render() {
     return (
-      <div className="style">
-        <tr className="row">
+      <React.Fragment>
+        <tr className="row style">
           <td className="col-sm-12">{this.props.treatsItem.id}</td>
         </tr>
         <tr className="row">
@@ -32,7 +32,7 @@ class OrderTreatsComp extends React.Component {
           </td>
         </tr>
         <br></br>
-      </div>
+      </React.Fragment>
     );
   }
 
