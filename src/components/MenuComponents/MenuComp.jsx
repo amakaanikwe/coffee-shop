@@ -7,7 +7,7 @@ import "../../css/CoffeeTreatsCompStyle.css";
 class MenuComp extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <>
         <section className="container-fluid menuStyle">
           <div className="row">
             <div className="col-sm-3">
@@ -41,7 +41,7 @@ class MenuComp extends React.Component {
             {!this.props.turnCompToggleOn ? "Order Now" : "Back to Menu"}
           </button>
         </section>
-      </React.Fragment>
+      </>
     );
   }
 }
