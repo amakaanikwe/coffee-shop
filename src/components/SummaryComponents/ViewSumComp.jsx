@@ -3,7 +3,7 @@ import React from "react";
 class ViewSumComp extends React.Component {
     render() {
       return (
-        <React.Fragment>
+        <>
           <section>
             <h1></h1>
 
@@ -11,7 +11,7 @@ class ViewSumComp extends React.Component {
           <button>
             Place Order
           </button>
-        </React.Fragment>
+        </>
       );
     }
   }
