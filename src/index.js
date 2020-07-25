@@ -6,7 +6,13 @@ import reducer from './redux/reducers'
 import './index.css';
 import App from './App';
 
-const store = createStore(reducer);
+const initialStore = {
+    count: 0
+}
+
+const store = createStore(reducer, initialStore);
+
+
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 
