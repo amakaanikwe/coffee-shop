@@ -12,7 +12,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch(action.type){
         case "COFFEEINCREMENT": {
-            state = {...state, name: action.payload};
+            state = {...state, count: state.coffee.value + 1 ;
         }
         case "TREATSINCREMENT": {
             state.age = action.payload;
