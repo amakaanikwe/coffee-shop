@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "./NavBar";
 import CoffeeTeaComp from "./CoffeeTeaComp.jsx";
 import TreatsComp from "./TreatsComp.jsx";
 import "../../css/MenuCompStyle.css";
@@ -10,6 +11,9 @@ class MenuComp extends React.Component {
       <>
         <section className="container-fluid menuStyle">
           <div className="row">
+            <div className="col-sm-12">
+              <NavBar />
+            </div>
             <div className="col-sm-3">
               <div className="sectionStyle">Coffee & Tea</div>
             </div>
