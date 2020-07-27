@@ -7,6 +7,9 @@ class OrderComp extends React.Component {
     return (
       <div className="container-fluid menuStyle">
         <div className="row">
+        <div className="col-sm-12">
+              <NavBar />
+          </div>
           <div className="col-sm-3">
             <div className="sectionStyle">Coffee & Tea</div>
           </div>
