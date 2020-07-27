@@ -1,8 +1,8 @@
 import React from "react";
 import "../../css/CoffeeTreatsCompStyle.css";
 
-class CoffeeTeaComp extends React.Component {
-  render() {
+const CoffeeTeaComp = () => {
+
     return (
       <>
         <tr className="row compStyle">
@@ -15,6 +15,6 @@ class CoffeeTeaComp extends React.Component {
         <br></br>
       </>
     );
-  }
+  
 }
 export default CoffeeTeaComp;
