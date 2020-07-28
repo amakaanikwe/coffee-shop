@@ -12,6 +12,7 @@ import { GET_AMOUNT } from './redux/actions';
 const initialStore = {
     coffeeMenu: coffeedata,
     treatsMenu: treatsdata,
+    turnCompToggleOn: true,
     total: 0,
     amount: 0
 
