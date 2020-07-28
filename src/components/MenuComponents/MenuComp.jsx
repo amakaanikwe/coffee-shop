@@ -1,12 +1,17 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import NavBar from "./NavBar";
 import CoffeeTeaComp from "./CoffeeTeaComp.jsx";
 import TreatsComp from "./TreatsComp.jsx";
 import "../../css/MenuCompStyle.css";
 import "../../css/CoffeeTreatsCompStyle.css";
 
-class MenuComp extends React.Component {
-  render() {
+const MenuComp = () => {
+    const dispatch = useDispatch();
+    const turnCompToggleOn = useSelector(state => state.turnCompToggleOn);
+    const coffeeMenu = useSelector(state => state.coffeeMenu);
+    const treatsMenu = useSelector(state => state.treatsMenu);
+   
     return (
       <>
         <section className="container-fluid menuStyle">
@@ -21,7 +26,7 @@ class MenuComp extends React.Component {
           <table className="row">
             <tbody className="col-sm-12">
               <br></br>
-              {this.props.menu.coffee.map((item, i) => (
+              {coffeeMenu.map((item, i) => (
                 <CoffeeTeaComp key={i} coffee={item} />
               ))}
             </tbody>
@@ -36,18 +41,18 @@ class MenuComp extends React.Component {
           <table className="row">
             <tbody className="col-sm-12">
               <br></br>
-              {this.props.menu.treats.map((item, i) => (
+              {treatsMenu.map((item, i) => (
                 <TreatsComp key={i} treats={item} />
               ))}
             </tbody>
           </table>
-          <button onClick={() => this.props.onCompToggle()}>
-            {!this.props.turnCompToggleOn ? "Order Now" : "Back to Menu"}
+          <button onClick={(() => dispatch({type:"HANDLE_COMP_TOGGLE"}))}>
+            {!turnCompToggleOn ? "Order Now" : "Back to Menu"}
           </button>
         </section>
       </>
     );
-  }
+
 }
 
 export default MenuComp;
