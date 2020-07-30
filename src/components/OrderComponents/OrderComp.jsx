@@ -1,9 +1,15 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 import OrderCoffeeComp from "./OrderCoffeeComp.jsx";
 import OrderTreatsComp from "./OrderTreatsComp.jsx";
+import NavBar from "../MenuComponents/NavBar";
 
-class OrderComp extends React.Component {
-  render() {
+const OrderComp = () => {
+  const dispatch = useDispatch();
+  const turnCompToggleOn = useSelector(state => state.turnCompToggleOn);
+  const coffeeMenu = useSelector(state => state.coffeeMenu);
+  const treatsMenu = useSelector(state => state.treatsMenu);
+
     return (
       <div className="container-fluid menuStyle">
         <div className="row">
@@ -17,12 +23,10 @@ class OrderComp extends React.Component {
         <br></br>
         <table className="row">
           <tbody className="col-sm-12">
-            {this.props.menu.coffee.map((coffeeItem, i) => (
+            {coffeeMenu.map((item, i) => (
               <OrderCoffeeComp
                 key={i}
-                coffeeItem={coffeeItem}
-                onCoffeeIncrement={this.props.onCoffeeIncrement}
-                onCoffeeDecrement={this.props.onCoffeeDecrement}
+                coffee={item}
               />
             ))}
           </tbody>
@@ -38,23 +42,21 @@ class OrderComp extends React.Component {
         <br></br>
         <table className="row">
           <tbody className="col-sm-12">
-            {this.props.menu.treats.map((treatsItem, i) => (
+            {treatsMenu.map((item, i) => (
               <OrderTreatsComp
                 key={i}
-                treatsItem={treatsItem}
-                onTreatsIncrement={this.props.onTreatsIncrement}
-                onTreatsDecrement={this.props.onTreatsDecrement}
+                treats={item}
               />
             ))}
           </tbody>
         </table>
-        <button onClick={() => this.props.onCompToggle()}>
-          {this.props.turnCompToggleOn ? "Order Now" : "Back to Menu"}
+        <button onClick={(() => dispatch({type:"HANDLE_COMP_TOGGLE"}))}>
+          {turnCompToggleOn ? "Order Now" : "Back to Menu"}
         </button>
         <button>Place Order</button>
       </div>
     );
-  }
+
 }
 
 export default OrderComp;
