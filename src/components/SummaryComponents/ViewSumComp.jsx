@@ -1,7 +1,7 @@
 import React from "react";
 
-class ViewSumComp extends React.Component {
-    render() {
+const ViewSumComp = () => {
+
       return (
         <>
           <section>
@@ -13,7 +13,7 @@ class ViewSumComp extends React.Component {
           </button>
         </>
       );
-    }
+
   }
   
   export default ViewSumComp;
