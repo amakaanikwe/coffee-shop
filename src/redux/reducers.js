@@ -6,7 +6,7 @@ const reducer = (state, action) => {
             return {...state, count: state.coffee.value + 1 }
         
         case COFFEE_DECREASE : 
-            return {...state}
+            return {...state, count: state.coffee.value - 1}
         
         case TREATS_INCREASE : 
         return {...state, count: state.treate.value + 1 }
