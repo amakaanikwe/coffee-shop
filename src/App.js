@@ -1,8 +1,6 @@
 import React from "react";
 import MenuComp from "./components/MenuComponents/MenuComp.jsx";
 import OrderComp from "./components/OrderComponents/OrderComp.jsx";
-import coffeedata from "./inventory/coffeedata.json";
-import treatsdata from "./inventory/treatsdata.json";
 import { useSelector} from "react-redux";
 
 
