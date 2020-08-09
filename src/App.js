@@ -16,6 +16,15 @@ const App = () =>{
     // };
 
 
+
+  // handleCoffeeIncrement = () => {
+  //   const coffeeMenu = [...state.coffeeMenu ];
+  //   const index = coffeeMenu.indexOf(coffeeItem);
+  //   coffeeMenu[index] = { ...coffeeItem };
+  //   coffeeMenu[index].value++;
+  //   return coffeeMenu
+  // };
+
   // Order Increment Counters
   // handleCoffeeIncrement = (coffeeItem) => {
   //   const coffee = [...this.state.coffee ];
