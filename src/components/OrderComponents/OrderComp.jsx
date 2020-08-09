@@ -9,7 +9,7 @@ const OrderComp = () => {
   const turnCompToggleOn = useSelector(state => state.turnCompToggleOn);
   const coffeeMenu = useSelector(state => state.coffeeMenu);
   const treatsMenu = useSelector(state => state.treatsMenu);
-
+  const total = useSelector(state => state.total);
     return (
       <div className="container-fluid menuStyle">
         <div className="row">
@@ -27,6 +27,7 @@ const OrderComp = () => {
               <OrderCoffeeComp
                 key={i}
                 coffee={item}
+  
               />
             ))}
           </tbody>
@@ -50,6 +51,7 @@ const OrderComp = () => {
             ))}
           </tbody>
         </table>
+            <p>Total: {total} </p>
         <button onClick={(() => dispatch({type:"HANDLE_COMP_TOGGLE"}))}>
           {turnCompToggleOn ? "Order Now" : "Back to Menu"}
         </button>
