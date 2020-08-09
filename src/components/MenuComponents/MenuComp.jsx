@@ -47,7 +47,7 @@ const MenuComp = () => {
             </tbody>
           </table>
           <button onClick={(() => dispatch({type:"HANDLE_COMP_TOGGLE"}))}>
-            {!turnCompToggleOn ? "Order Now" : "Back to Menu"}
+            {turnCompToggleOn ? "Order Now" : "Back to Menu"}
           </button>
         </section>
       </>
