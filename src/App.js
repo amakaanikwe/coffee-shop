@@ -7,39 +7,6 @@ import { useSelector} from "react-redux";
 const App = () =>{
     const turnCompToggleOn = useSelector (state => state.turnCompToggleOn);
 
-    // const state = {
-    //   turnCompToggleOn: true,
-    //   coffee: coffeedata,
-    //   treats: treatsdata,
-    // };
-
-
-
-  // handleCoffeeIncrement = () => {
-  //   const coffeeMenu = [...state.coffeeMenu ];
-  //   const index = coffeeMenu.indexOf(coffeeItem);
-  //   coffeeMenu[index] = { ...coffeeItem };
-  //   coffeeMenu[index].value++;
-  //   return coffeeMenu
-  // };
-
-  // Order Increment Counters
-  // handleCoffeeIncrement = (coffeeItem) => {
-  //   const coffee = [...this.state.coffee ];
-  //   const index = coffee.indexOf(coffeeItem);
-  //   coffee[index] = { ...coffeeItem };
-  //   coffee[index].value++;
-  //   console.log(coffee);
-  //   this.setState({ coffee });
-  // };
-
-  // handleTreatsIncrement = (treatsItem) => {
-  //   const treats = [...this.state.treats];
-  //   const index = treats.indexOf(treatsItem);
-  //   treats[index] = { ...treatsItem };
-  //   treats[index].value++;
-  //   this.setState({ treats });
-  // };
 
   // Order Decrement Counters
   // handleCoffeeDecrement = (item) => {
