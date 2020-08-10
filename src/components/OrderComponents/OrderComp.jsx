@@ -26,7 +26,7 @@ const OrderComp = () => {
             {coffeeMenu.map((item, i) => (
               <OrderCoffeeComp
                 key={i}
-                coffee={item}
+                {...item}
   
               />
             ))}
@@ -46,7 +46,7 @@ const OrderComp = () => {
             {treatsMenu.map((item, i) => (
               <OrderTreatsComp
                 key={i}
-                treats={item}
+                {...item}
               />
             ))}
           </tbody>
