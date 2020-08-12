@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import {GET_TOTAL} from "../../redux/actionsTypes.js";
 import OrderCoffeeComp from "./OrderCoffeeComp.jsx";
 import OrderTreatsComp from "./OrderTreatsComp.jsx";
 import NavBar from "../MenuComponents/NavBar";
@@ -10,6 +11,10 @@ const OrderComp = () => {
   const coffeeMenu = useSelector(state => state.coffeeMenu);
   const treatsMenu = useSelector(state => state.treatsMenu);
   const total = useSelector(state => state.total);
+  React.useEffect(()=>{
+    dispatch({ type: GET_TOTAL })
+  })
+
     return (
       <div className="container-fluid menuStyle">
         <div className="row">
