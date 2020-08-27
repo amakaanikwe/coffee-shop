@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch} from "react-redux";
 import {GET_COFFEE_TOTAL} from "../../redux/actionsTypes.js";
 import OrderCoffeeComp from "./OrderCoffeeComp.jsx";
 import OrderTreatsComp from "./OrderTreatsComp.jsx";
@@ -14,7 +14,7 @@ const OrderComp = () => {
   const dispatch = useDispatch();
   React.useEffect(()=>{
     dispatch({ type: GET_COFFEE_TOTAL })
-  })
+  }, [])
 
     return (
       <div className="container-fluid menuStyle">
