@@ -10,8 +10,8 @@ const OrderComp = () => {
   const coffeeMenu = useSelector(state => state.coffeeMenu);
   const treatsMenu = useSelector(state => state.treatsMenu);
   const {coffeeTotal} = useSelector(state => state);
-
   const dispatch = useDispatch();
+  
   React.useEffect(()=>{
     dispatch({ type: GET_COFFEE_TOTAL })
   }, [])
