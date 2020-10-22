@@ -25,7 +25,7 @@ const reducer = (state = initialState, action) => {
         
         case COFFEE_DECREASE : 
             return {...state, 
-                coffeeMenu: state.coffeeMenu.map      (coffeeItem   => (coffeeItem.id === action.payload) ? {...coffeeItem, value: coffeeItem.value - 1} : coffeeItem)}
+                coffeeMenu: state.coffeeMenu.map(coffeeItem   => (coffeeItem.id === action.payload) ? {...coffeeItem, value: coffeeItem.value - 1} : coffeeItem)}
         
         case TREATS_INCREASE : 
             return {...state, 
@@ -38,12 +38,14 @@ const reducer = (state = initialState, action) => {
         case GET_COFFEE_TOTAL :
             let {coffeeTotal, coffeeAmount} = state.coffeeMenu.reduce((cartTotal, cartItem)=>{
                 const {price, value} = cartItem;
-                cartTotal.coffeeAmount += value
-                
+                const itemTotal = price * value;
+
+                cartTotal.coffeeTotal += itemTotal;
+                cartTotal.coffeeAmount += value;
                 return cartTotal;
             }, 
             {coffeeTotal: 0, 
-            coffeeAmount: 0})
+            coffeeAmount: 0});
             return {...state, coffeeTotal, coffeeAmount}
         
         case GET_TREATS_TOTAL :
