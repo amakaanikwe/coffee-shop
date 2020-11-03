@@ -1,12 +1,27 @@
 import React from "react";
+import { useSelector, useDispatch, useEffect} from "react-redux";
+import {GET_COFFEE_TOTAL} from "../../redux/actionsTypes.js";
 import OrderCoffeeComp from "./OrderCoffeeComp.jsx";
 import OrderTreatsComp from "./OrderTreatsComp.jsx";
+import NavBar from "../MenuComponents/NavBar";
 
-class OrderComp extends React.Component {
-  render() {
+const OrderComp = () => {
+  const turnCompToggleOn = useSelector(state => state.turnCompToggleOn);
+  const coffeeMenu = useSelector(state => state.coffeeMenu);
+  const treatsMenu = useSelector(state => state.treatsMenu);
+  const {coffeeTotal} = useSelector(state => state);
+  const dispatch = useDispatch();
+  
+  useEffect(()=>{
+    dispatch({ type: GET_COFFEE_TOTAL })
+  }, [])
+
     return (
       <div className="container-fluid menuStyle">
         <div className="row">
+        <div className="col-sm-12">
+              <NavBar />
+          </div>
           <div className="col-sm-3">
             <div className="sectionStyle">Coffee & Tea</div>
           </div>
@@ -14,12 +29,11 @@ class OrderComp extends React.Component {
         <br></br>
         <table className="row">
           <tbody className="col-sm-12">
-            {this.props.menu.coffee.map((coffeeItem, i) => (
+            {coffeeMenu.map((item, i) => (
               <OrderCoffeeComp
                 key={i}
-                coffeeItem={coffeeItem}
-                onCoffeeIncrement={this.props.onCoffeeIncrement}
-                onCoffeeDecrement={this.props.onCoffeeDecrement}
+                {...item}
+  
               />
             ))}
           </tbody>
@@ -35,23 +49,22 @@ class OrderComp extends React.Component {
         <br></br>
         <table className="row">
           <tbody className="col-sm-12">
-            {this.props.menu.treats.map((treatsItem, i) => (
+            {treatsMenu.map((item, i) => (
               <OrderTreatsComp
                 key={i}
-                treatsItem={treatsItem}
-                onTreatsIncrement={this.props.onTreatsIncrement}
-                onTreatsDecrement={this.props.onTreatsDecrement}
+                {...item}
               />
             ))}
           </tbody>
         </table>
-        <button onClick={() => this.props.onCompToggle()}>
-          {this.props.turnCompToggleOn ? "Order Now" : "Back to Menu"}
+            <p>Total: {coffeeTotal} </p>
+        <button onClick={(() => dispatch({type:"HANDLE_COMP_TOGGLE"}))}>
+          {turnCompToggleOn ? "Order Now" : "Back to Menu"}
         </button>
         <button>Place Order</button>
       </div>
     );
-  }
+
 }
 
 export default OrderComp;

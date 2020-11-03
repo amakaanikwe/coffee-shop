@@ -1,47 +1,69 @@
 import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {TREATS_INCREASE, TREATS_DECREASE} from "../../redux/actionsTypes.js";
 import "../../css/OrderCompStyle.css";
 
-class OrderTreatsComp extends React.Component {
-  render() {
+const OrderTreatsComp = ({id, summary, price, value}) => {
+  const treatsMenu = useSelector(state => state.treatsMenu);
+  const dispatch = useDispatch();
+
+
+  // const formatCount = () => {
+  //   // return this.state.count === 0 ? 'zero' : this.state.count;
+  //   // jsx expressions can be used the same way as objects
+  //   const value  = treatsMenu[0].value;
+
+  //   return (value === 0) | (value <= 0) ? 0 : value;
+  // }
+
+  function incrimentTreatsCout (treatsId){
+    dispatch({
+      type: TREATS_INCREASE,
+      payload: treatsId
+    })
+
+  }
+
+  function decrementTreatsCout (treatsId){
+    dispatch({
+      type: TREATS_DECREASE,
+      payload: treatsId
+    })   
+  }
+
     return (
       <>
         <tr className="row style">
-          <td className="col-sm-12">{this.props.treatsItem.id}</td>
+          <td className="col-sm-12">{id}</td>
         </tr>
         <tr className="row">
-          <td className="col-sm-9">{this.props.treatsItem.summary}</td>
-          <td className="col-sm-1 priceStyle">{this.props.treatsItem.price}</td>
+          <td className="col-sm-9">{summary}</td>
+          <td className="col-sm-1 priceStyle">{price}</td>
           <td className="col-sm-1 btn-group-vertical buttonStyle">
             <div className="btn-group-vertical">
               <button
                 onClick={() =>
-                  this.props.onTreatsIncrement(this.props.treatsItem)
+                  {incrimentTreatsCout(id)}
                 }
                 className="glyphicon glyphicon-menu-up"
               ></button>
               <button
                 onClick={() =>
-                  this.props.onTreatsDecrement(this.props.treatsItem)
+                 {decrementTreatsCout(id)}
                 }
                 className="glyphicon glyphicon-menu-down "
               ></button>
             </div>
           </td>
           <td className="col-sm-1 itemNumStyle">
-            <span>{this.formatCount()}</span>
+            <span>{value}</span>
           </td>
         </tr>
         <br></br>
       </>
     );
-  }
 
-  formatCount() {
-    // return this.state.count === 0 ? 'zero' : this.state.count;
-    // jsx expressions can be used the same way as objects
-    const { value } = this.props.treatsItem;
-    return (value === 0) | (value <= 0) ? 0 : value;
-  }
+
 }
 
 export default OrderTreatsComp;
