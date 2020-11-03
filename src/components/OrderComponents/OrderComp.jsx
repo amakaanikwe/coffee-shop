@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch, useEffect} from "react-redux";
+import { useSelector, useDispatch} from "react-redux";
 import {GET_COFFEE_TOTAL} from "../../redux/actionsTypes.js";
 import OrderCoffeeComp from "./OrderCoffeeComp.jsx";
 import OrderTreatsComp from "./OrderTreatsComp.jsx";
@@ -12,7 +12,7 @@ const OrderComp = () => {
   const {coffeeTotal} = useSelector(state => state);
   const dispatch = useDispatch();
   
-  useEffect(()=>{
+  React.useEffect(()=>{
     dispatch({ type: GET_COFFEE_TOTAL })
   }, [])
 
@@ -57,7 +57,7 @@ const OrderComp = () => {
             ))}
           </tbody>
         </table>
-            <p>Total: {coffeeTotal} </p>
+        {/* <p>Total: {coffeeTotal} </p> */}
         <button onClick={(() => dispatch({type:"HANDLE_COMP_TOGGLE"}))}>
           {turnCompToggleOn ? "Order Now" : "Back to Menu"}
         </button>
