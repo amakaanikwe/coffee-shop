@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import NavBar from "./NavBar";
 import CoffeeTeaComp from "./CoffeeTeaComp.jsx";
 import TreatsComp from "./TreatsComp.jsx";
+import ArrowComp from "./ArrowComp.jsx";
 import "../../css/MenuCompStyle.css";
 import "../../css/CoffeeTreatsCompStyle.css";
 
@@ -31,6 +32,9 @@ const MenuComp = () => {
               ))}
             </tbody>
           </table>
+
+          <ArrowComp />
+
           <div className="row">
             <div className="col-sm-3">
               <br></br>
