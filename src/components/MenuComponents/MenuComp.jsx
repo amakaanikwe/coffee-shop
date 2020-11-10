@@ -33,7 +33,9 @@ const MenuComp = () => {
             </tbody>
           </table>
 
-          <ArrowComp />
+
+          {/* <ArrowComp /> */}
+          
 
           <div className="row">
             <div className="col-sm-3">
