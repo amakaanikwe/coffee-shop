@@ -1,8 +1,17 @@
   
+
+  .arrowButton {
+    width: 60px;
+    height: 72px;
+    border: none;
+    background-color: lightgray;
+    cursor: pointer;
+  }
+
   .arrows {
       width: 60px;
       height: 72px;
-      position: absolute;
+      /* position: absolute; */
       left: 50%;
       margin-left: -30px;
       bottom: 20px;
